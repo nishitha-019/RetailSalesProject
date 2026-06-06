@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Prediction Result</h1>
+
+    <h3>TV Budget: {{ tv }}</h3>
+    <h3>Radio Budget: {{ radio }}</h3>
+    <h3>Newspaper Budget: {{ newspaper }}</h3>
+
+    <br>
+
+    <h2 style="color:green;">
+        Predicted Sales: {{ prediction }}
+    </h2>
+
+    <br>
+
+    <a href="/">
+        <button>Go Back</button>
+    </a>
+
+</div>
+
+</body>
+</html>
